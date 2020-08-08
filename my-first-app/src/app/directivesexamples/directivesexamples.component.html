@@ -1,0 +1,14 @@
+<input type="text" name = "form-control" [(ngModel)] = "serverName" (input)="updateServerCreated()">
+<br><br>
+<button class="btn btn-primary" (click) = "onCreateServer()">Create Server</button>
+<br><br>
+<ng-template #noServer>
+    <p>No Server created!</p>
+</ng-template>
+
+<p *ngIf="isServerCreated; else noServer">Server created with name = {{ serverName }}</p>
+
+<br><br>
+<div *ngFor = "let server of servers; let i index">
+    {{ server }}
+</div>
