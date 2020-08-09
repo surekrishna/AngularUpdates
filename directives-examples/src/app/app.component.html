@@ -53,7 +53,16 @@
         </div>    
       </ul>      
     </div>
-
+    <div class="col-md-12">
+      <h2>ngSwitch usage</h2>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="1"> Value is 1</p>
+        <p *ngSwitchCase="2"> Value is 2</p>
+        <p *ngSwitchCase="3"> Value is 3</p>
+        <p *ngSwitchCase="4"> Value is 4</p>
+        <p *ngSwitchCaseDefult> No Value</p>
+      </div>
+    </div>
   </div>
 </div>
 
