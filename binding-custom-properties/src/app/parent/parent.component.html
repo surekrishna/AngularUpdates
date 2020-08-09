@@ -1,0 +1,5 @@
+<app-child *ngFor="let employee of employees" [element]="employee"></app-child>
+<button (click)="sendNotificaitonToParent()">Notify To Parent</button>
+
+
+<app-lifecycle-hooks *ngFor="let employee of employees" [element]="employee"></app-lifecycle-hooks>
