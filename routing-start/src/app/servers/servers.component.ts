@@ -12,7 +12,7 @@ export class ServersComponent implements OnInit {
   constructor(private serversService: ServersService) { }
 
   ngOnInit() {
-    this.servers = this.serversService.getServers();
+    this.servers = this.serversService.getServers();    
   }
 
 }
